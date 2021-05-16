@@ -13,13 +13,13 @@
     <EmbeddedResource Include="Assets\*" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia.Desktop" Version="0.9.10" />
-    <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.10" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.4" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.4" />
     <PackageReference Include="NSubsys" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="ReactiveUI" Version="11.4.1" />
+    <!--<PackageReference Include="ReactiveUI" Version="11.4.1" />-->
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\VtNetCore.Avalonia\VtNetCore.Avalonia\VtNetCore.Avalonia.csproj" />

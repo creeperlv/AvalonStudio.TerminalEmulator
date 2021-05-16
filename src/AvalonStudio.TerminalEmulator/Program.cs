@@ -1,6 +1,6 @@
 ﻿using System;
 using Avalonia;
-using Avalonia.Logging.Serilog;
+using Avalonia.ReactiveUI;
 using AvalonStudio.TerminalEmulator.ViewModels;
 using AvalonStudio.TerminalEmulator.Views;
 using AvalonStudio.Terminals.Unix;
