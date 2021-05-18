@@ -34,7 +34,8 @@ namespace AvalonStudio.Terminals.Win32
 
             if (err != IntPtr.Zero)
             {
-                System.Console.WriteLine(winpty_error_code(err));
+                Trace.WriteLine("Pointer is Zero");
+                Trace.WriteLine(winpty_error_code(err));
                 return null;
             }
 
@@ -45,7 +46,8 @@ namespace AvalonStudio.Terminals.Win32
             var spawnCfg = winpty_spawn_config_new(WINPTY_SPAWN_FLAG_AUTO_SHUTDOWN, exe, args, cwd, environment, out err);
             if (err != IntPtr.Zero)
             {
-                System.Console.WriteLine(winpty_error_code(err));
+                Trace.WriteLine("Pointer is Zero");
+                Trace.WriteLine(winpty_error_code(err));
                 return null;
             }
 
@@ -54,7 +56,8 @@ namespace AvalonStudio.Terminals.Win32
 
             if (!winpty_spawn(handle, spawnCfg, out IntPtr process, out IntPtr thread, out int procError, out err))
             {
-                System.Console.WriteLine(winpty_error_code(err));
+                Trace.WriteLine("Launch Failed");
+                Trace.WriteLine(winpty_error_code(err));
                 return null;
             }
 
